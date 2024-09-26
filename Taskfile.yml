@@ -1,0 +1,8 @@
+version: '3'
+
+tasks:
+  up:
+    - docker compose -f ./deploy/local/docker-compose.yml up -d
+
+  down:
+    - docker compose -f ./deploy/local/docker-compose.yml down
